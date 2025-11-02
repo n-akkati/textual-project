@@ -16,5 +16,5 @@ class WidgetsApp(App):
 
 
 if __name__ == "__main__":
-    app = MultiWidgetApp()
+    app = WidgetsApp()
     app.run()
