@@ -1,14 +1,9 @@
-"""
-Learn how to make your apps beautiful with CSS.
-"""
-
 from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal, Vertical
 from textual.widgets import Header, Footer, Button, Label, Static
 
 
 class StylesApp(App):
-    """An app demonstrating CSS styling capabilities."""
     
     CSS = """
     Screen {
@@ -101,7 +96,6 @@ class StylesApp(App):
     """
 
     def compose(self) -> ComposeResult:
-        """Create a beautifully styled interface."""
         yield Header()
         
         # Hero section
@@ -135,7 +129,6 @@ class StylesApp(App):
         yield Footer()
     
     def on_button_pressed(self, event: Button.Pressed) -> None:
-        """Handle button clicks."""
         output = self.query_one("#output", Label)
         button_map = {
             "btn1": "Primary action executed! ✓",
