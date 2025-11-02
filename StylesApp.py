@@ -140,5 +140,5 @@ class StylesApp(App):
 
 
 if __name__ == "__main__":
-    app = StyledApp()
+    app = StylesApp()
     app.run()
